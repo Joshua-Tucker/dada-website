@@ -1,140 +1,217 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-* {
-  font-family: "Open Sans", sans-serif;
-  background-color: white;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 10px 10px 10px 10px;
-  padding: 0px;
-  color: #0b156b;
-}
-
-.reg {
-  font-weight: 100;
-}
-
-.italic {
-  font-style: italic;
-  font-weight: 50;
-}
-
-nav,
-nav * {
-  height: 10vh;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-#login {
-  border: 2px solid #0b156b;
-  border-radius: 5px;
-  padding: 7.5px 10px 10px 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #0b156b;
-}
-
-header {
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-header h1 {
-  color: #37DAF4;
-}
-header #phone {
-  margin: auto;
-  padding: auto;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-}
-
-main img {
-  height: 250px;
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-}
-
-h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#intro h2 {
-  color: #37DAF4;
-}
-#intro p {
-  font-weight: 100;
-}
-
-.button {
-  border: 2px solid #0b156b;
-  border-radius: 5px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background-color: #0b156b;
-}
-
-#idea {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  margin: 50px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  background-color: #f7f7a9;
-}
-footer a {
-  text-decoration: none;
-  background-color: #f7f7a9;
-}
-
 @media screen and (max-width: 400px) {
-  body {
-    max-width: 100%;
-  }
-  body * {
-    font-size: 16px;
+  * {
+    font-size: large;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #0b156b;
   }
 
-  #img1 {
-    height: 100px;
-    width: auto;
+  .reg {
+    font-weight: 100;
+  }
+
+  .italic {
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  nav,
+nav * {
+    height: 60px;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #login {
+    display: inline-block;
+    border: 2px solid #0b156b;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px 20px 12px 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #0b156b;
+    text-align: center;
+    background-color: white;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    margin: 30px 20px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #37DAF4;
+  }
+  header #phone {
+    margin: 20px 20px;
+    padding: 0px 70px;
+    height: 100%;
+    width: 100%;
+  }
+
+  main {
+    margin: 0px 10px;
+  }
+  main img {
+    height: 250px;
+    width: 250px;
+  }
+
+  #intro h1 {
+    margin: 10px 15px 20px 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+  }
+  #intro h2 {
+    margin: 20px 15px;
+    padding: 10px;
+    color: #37DAF4;
+    font-size: larger;
+  }
+  #intro p {
+    margin: 0px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 100;
+  }
+
+  .button {
+    display: inline-block;
+    border: 2px solid #0b156b;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 10px 60px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #0b156b;
   }
 
   #idea {
+    margin: 0px;
+    padding: 0px 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #idea h2 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #idea span {
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #idea img {
+    height: 140px;
+    width: auto;
+    margin: 0px;
+    padding: 5px;
   }
 
-  #header {
-    font-size: 16px;
+  #challange {
+    margin: 0px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #challange h2 {
+    font-weight: 900;
+    font-size: 15px;
+    text-align: left;
+  }
+  #challange span {
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #challange img {
+    height: 150px;
+    width: auto;
+    margin: 0px;
+    padding-right: 30px;
   }
 
-  header #phone {
-    height: 100%;
+  #read {
+    margin: 0px;
+    padding: 0px 10px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  #read h2 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #read span {
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #read img {
+    height: 120px;
+    width: auto;
+    margin: 0px;
+    padding-left: 0px;
+  }
+
+  #super {
+    margin: 0px;
+    padding-right: 0px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+  }
+  #super h2 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #super span {
+    font-weight: 100;
+    font-size: 14px;
+  }
+  #super img {
+    height: 130px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  footer {
+    margin: 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #f7f7a9;
     width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f7f7a9;
   }
 }
