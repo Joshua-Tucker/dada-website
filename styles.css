@@ -110,9 +110,31 @@ footer a {
 }
 
 @media screen and (max-width: 400px) {
+  body {
+    max-width: 100%;
+  }
+  body * {
+    font-size: 16px;
+  }
+
+  #img1 {
+    height: 100px;
+    width: auto;
+  }
+
   #idea {
+    display: flex;
     flex-direction: row;
-    display: inline-flexbox;
     justify-content: space-between;
+    width: 100vw;
+  }
+
+  #header {
+    font-size: 16px;
+  }
+
+  header #phone {
+    height: 100%;
+    width: 100%;
   }
 }

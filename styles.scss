@@ -6,6 +6,7 @@ $color-primary:#0b156b;
 $color-secondary: #37DAF4;
 $color-background:#f7f7a9;
 
+
 * {
     font-family: $font-body;
     background-color: white;
@@ -46,7 +47,7 @@ nav * {
 header {
     margin: 25px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -58,12 +59,12 @@ header {
 
 
     #phone {
-    margin: auto;
-    padding: auto;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 50%;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -131,13 +132,34 @@ footer {
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
+    body {
+        max-width: 100%;
+    
+    * {
+        font-size: 16px;
+    }
+}
+
+#img1 {
+    height: 100px;
+    width: auto;
+}
 
     #idea {
-        flex-direction: row;
-        display:inline-flexbox;
-        justify-content: space-between;
+    display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width:100vw;
+
     }
-       
+    #header {
+        font-size: 16px;
+    }                               
     
+    header #phone{
+        height:100%;
+        width: 100%;
+    }
+
 }
