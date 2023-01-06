@@ -1,122 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$font-body:'Open Sans', sans-serif;
+$font-body:'Open Sans',
+sans-serif;
 $color-primary:#0b156b;
 $color-secondary: #37DAF4;
 $color-background:#f7f7a9;
 
-    *{
-        font-family: $font-body;
-        background-color: white;
-        box-sizing: border-box;
-        text-align: center;
-        margin:10px 10px 10px 10px;
-        padding: 0px;
-        color:$color-primary
-   
-      }
+* {
+    font-family: $font-body;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    color: $color-primary
+}
 
-    .reg {
-        font-weight:100;
-        }
+.reg {
+    font-weight: 100;
+}
 
-    .italic {
-        font-style: italic;
-        font-weight: 50;
-    }
+.italic {
+    font-style: italic;
+    font-weight: 50;
+}
 
-  
+nav,
+nav * {
+    height: 10vh;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
 
-    
-    nav,
-    nav * {
-        height: 10vh;
-        padding: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-    }
+#login {
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    padding: 7.5px 10px 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-primary;
+}
 
-    #login{
-        border: 2px solid $color-primary;
-        border-radius: 5px;
-        padding: 7.5px 10px 10px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: $color-primary;
-    }
+header {
+    margin: 25px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    header {
-        margin: 25px;
-        display:flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        
-        h1 {
+    h1 {
         color: $color-secondary;
-        }
-    
     }
+
+
 
     #phone {
-        margin:auto;
-        padding:auto;
-        display:flex;
-        align-items: center;
-        width: 50%;
-        height: 50%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
     }
-    main{
-        img {
-            height: 250px;
-            width: 250px;
-            margin: 20px;
-            padding: 20px;
-        }
+}
+
+main {
+    img {
+        height: 250px;
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
     }
- 
- 
-  h1{
+}
+
+
+h1 {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 
-  }
+}
 
-  #intro {
+#intro {
     h2 {
-        color:$color-secondary;
+        color: $color-secondary;
     }
 
     p {
         font-weight: 100;
-        }
-  }
+    }
+}
 
-  .button {
+.button {
     border: 2px solid $color-primary;
     border-radius: 5px;
-    margin: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background-color:$color-primary;
-  }
+    background-color: $color-primary;
+}
 
-  #idea {
-    
-     display:flex;
+#idea {
+
+    display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
-  }
 
-  footer {
+}
+
+footer {
     margin: 50px;
     padding: 00px;
     display: flex;
@@ -129,8 +129,15 @@ $color-background:#f7f7a9;
         background-color: $color-background;
     }
 
-    
-  }
+}
 
+@media screen and (max-width:400px) {
 
+    #idea {
+        flex-direction: row;
+        display:inline-flexbox;
+        justify-content: space-between;
+    }
+       
     
+}
