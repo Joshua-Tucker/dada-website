@@ -47,11 +47,15 @@ $color-background:#f7f7a9;
     }
 
     header {
+        margin: 25px;
         display:flex;
         text-align: center;
         justify-content: center;
         align-items: center;
+        
+        h1 {
         color: $color-secondary;
+        }
     
     }
 

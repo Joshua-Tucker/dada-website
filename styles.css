@@ -37,10 +37,13 @@ nav * {
 }
 
 header {
+  margin: 25px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+header h1 {
   color: #37DAF4;
 }
 
